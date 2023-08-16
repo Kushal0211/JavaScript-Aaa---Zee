@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body style="background-color: black; color: white;">
+
+</body>
+
+        <div class="parent">
+            <div class="day">Monday</div>
+            <div class="day">Tuesday</div>
+            <div class="day">Wednesday</div>
+            <div class="day">Thursday</div>
+        </div>
+    <script>
+        
+        const divi = document.querySelector('.parent')
+        // console.log(div.innerHTML);
+
+        // console.log(div.childNodes[0].innerText);
+
+        // console.log(div.children[0].innerHTML);
+
+        for (let i = 0 ; i < divi.children.length; i++) {
+            
+            if( i%2 == 0)
+            {
+                divi.children[i].style.color = 'black'
+                divi.children[i].style.backgroundColor = 'yellow'
+               divi.children[i].style.margin = '6px'
+            }
+            else{
+                divi.children[i].style.color = 'black'
+                divi.children[i].style.backgroundColor = 'white'
+               divi.children[i].style.margin = '6px'
+            }
+        }
+
+
+    </script>
+
+</html>

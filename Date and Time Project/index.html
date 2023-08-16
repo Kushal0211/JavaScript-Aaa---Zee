@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        
+        body{
+            background-color: black;
+        }
+
+        #clock {
+            font-size: 200px;
+            color: rgb(255, 158, 178);
+        }
+
+        #time{
+            font-size: 200px;
+            color: rgb(255, 255, 255);
+        }
+
+        #box{
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body style="background-color: black;">
+    <div id="box">
+        <div id="clock"></div>
+        <div id="time"></div>s
+    </div>
+   
+</body>
+<script>
+    const clock = document.getElementById('clock');
+    const time = document.getElementById('time')
+
+    setInterval(function(){
+        let date = new Date();
+        
+
+        clock.innerHTML = date.toLocaleDateString();
+        time.innerHTML = date.toLocaleTimeString();
+    },1000)
+</script>
+</html>

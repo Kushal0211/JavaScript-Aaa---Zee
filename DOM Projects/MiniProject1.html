@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHooping Cart</title>
+
+    <style>
+       
+       *{
+        margin: 0;
+        padding: 0;
+       }
+
+       .btn{
+            width: 90px;
+            height: 30px;
+            position: relative;
+            left: 20px;
+            top: 10px;
+        }
+
+        .item{
+            width: 280px;
+            height: 300px;
+        }
+
+        .boxItem{
+            width: 320px;
+            height: 340px;
+            border: 1px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .quantity{
+            font-size: 30px;
+            position: relative;
+            top: 15px;
+        }
+
+        .QtyBox{
+            margin: 4px;
+           
+            display: inline;
+        }
+
+        #shoppingCart{
+            width: 97vw;
+            height: 200px;
+            border: 1px solid black;
+            margin-top: 40px;
+        }
+        
+
+        .fields{
+            margin: 15px;
+            width: 600px;
+            height: 20px;
+           
+            border: 1px solid black;
+            background-color: rgb(230, 254, 255);
+        }
+        
+        .qty{
+            margin: 10px;
+            width: 100px;
+            padding: 5px;
+           
+            position: absolute;
+            left: 1200px;
+            
+            height: 20px;
+            border: 1px solid black;
+            background-color: rgb(255, 230, 230);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="boxItem">
+        <img src="shirt.jpg" alt="" id="i1" class="item">
+    </div>
+
+    <!-- <div>
+        <span class="">Oversized Tee XV</span>
+    </div> -->
+    
+    <div class="QtyBox">
+        <span class="quantity"> Quantity </span>
+        <button id="btnAdd" class="btn">+</button>
+        <button id="btnSub" class="btn">-</button>
+    </div>
+   
+
+    <div id="shoppingCart">
+
+        <div id="Total Items" class="fields">Total Items 
+            <span id="qtyPrint" class="qty"></span>
+        </div>
+        
+        <div id="bill" class="fields">Bill  
+            <span id="totalBill" class="qty"></span>
+        </div>
+
+    </div>
+
+</body>
+
+<script src="MiniProject1.js"></script>
+</html>

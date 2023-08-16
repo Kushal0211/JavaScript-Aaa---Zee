@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        #btn{
+            padding: 15px;
+            margin: 10px;
+            width: 300px;
+            height: 50px;
+            position: relative;
+            left: 440px;
+        }
+
+        .result{
+            border: 1px solid black;
+            background-color: yellow;
+            width: 200px;
+            height: 50px;
+        }
+    </style>
+</head>
+<body>
+    <!-- <button id="btn" onclick= "countUser()"> Submit </button> -->
+    <button id="btn" > Submit </button>
+
+
+    <div class="result">
+        <div id="result"></div>
+    </div>
+
+</body>
+
+<script>
+   
+   let countAdd = 1;
+
+        // <!-- method 2 of using event listner -->
+
+//    btn.onclick = function countUser(){
+  
+//     if(countAdd<11)
+//     {
+//         document.getElementById('result').innerHTML = countAdd;
+//         countAdd++;
+//     }
+//    }   
+
+   function countUser(){
+  
+   if(countAdd<11)
+  {
+      document.getElementById('result').innerHTML = countAdd;
+      countAdd++;
+  }
+ }
+    
+   
+
+</script>
+</html>

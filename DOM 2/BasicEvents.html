@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body id="body1" style="background-color: aqua;">
+
+    <button id="btn">
+        Submit
+    </button>
+
+    <script>
+
+        const body = document.getElementById('body1')
+        const btn = document.getElementById('btn');
+
+        body.addEventListener('mousedown', function () {
+            body.style.backgroundColor = "red";
+        })
+
+        body.addEventListener('mouseup', function () {
+            body.style.backgroundColor = "white";
+        });
+
+
+        btn.addEventListener('mousedown', function () {
+            btn.style.backgroundColor = "red";
+        })
+
+        document.querySelector('body').addEventListener("mouseover", function (e) {
+            document.body.style.backgroundColor = "red";
+        })
+
+        document.querySelector('body').addEventListener('mouseout', function (e) {
+            document.body.style.backgroundColor = "green";
+        })
+
+    </script>
+</body>
+
+
+</html>

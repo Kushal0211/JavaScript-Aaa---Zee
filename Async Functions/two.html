@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <h1 class="heading">Welcome</h1>
+   <button id="start">Start</button>
+   <button id="stop"> Stop</button> 
+</body>
+
+<script>
+    const print = function() {
+    console.log('hi', Date.now());
+}
+
+let intervalId; // Declare a variable to store the interval ID
+
+const start = document.getElementById('start');
+const stop = document.getElementById('stop');
+
+start.addEventListener('click', function() {
+    intervalId = setInterval(print, 3000); // Start the interval after 3 seconds
+});
+
+stop.addEventListener('click', function() {
+    clearInterval(intervalId); // Stop the interval
+});
+
+
+</script>
+</html>

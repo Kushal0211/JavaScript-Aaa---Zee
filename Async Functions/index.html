@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="heading">Welcome to Team</h1>
+    <button id="btn">Stop</button>
+</body>
+
+<script>
+
+    const changeText = setTimeout( function(){
+        document.getElementById('heading').innerHTML = "Kushal and Krishna"
+    },3000)
+
+    // document.getElementById('btn').
+    // addEventListener('click',changeText)
+
+    document.getElementById('btn').
+    addEventListener('click', function(e){
+        clearTimeout(changeText);
+        console.log("stopped")
+    })
+    
+
+
+
+</script>
+</html>
